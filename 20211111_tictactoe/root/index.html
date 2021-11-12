@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic-Tac-Toe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Tic-Tac-Toe</h1>
+            <div id="grid">
+                <button type="button" class="gridSq" id="1" onclick="markSquare(this)"></button>
+                <button type="button" class="gridSq" id="2" onclick="markSquare(this)"></button>
+                <button type="button" class="gridSq" id="3" onclick="markSquare(this)"></button>
+                <button type="button" class="gridSq" id="4" onclick="markSquare(this)"></button>
+                <button type="button" class="gridSq" id="5" onclick="markSquare(this)"></button>
+                <button type="button" class="gridSq" id="6" onclick="markSquare(this)"></button>
+                <button type="button" class="gridSq" id="7" onclick="markSquare(this)"></button>
+                <button type="button" class="gridSq" id="8" onclick="markSquare(this)"></button>
+                <button type="button" class="gridSq" id="9" onclick="markSquare(this)"></button>
+            </div> 
+            <div id="status">Game started: <span class='highlight'>Player X goes first</span></div>
+            <button type="button" id="restart" onclick="restartGame()">START OVER</button>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
