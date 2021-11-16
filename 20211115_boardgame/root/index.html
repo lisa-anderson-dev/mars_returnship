@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Board Game</title>
+        <title>Snakes & Ladders</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Overpass+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css" type="text/css">
     </head>
     <body>
         <div class="container">
-            <h1>Snakes and Ladders Game</h1>
+            <h1>Snakes & Ladders</h1>
+            <div id="dice">
+                <div class="diceFace">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <button onclick="rollDie()">Roll Die</button>
+                <div id="message"></div>
+            </div>
             <table id="board"></table>
         </div>
-        <script>
-            let table = document.getElementById("board");
-            let evenVal = 100;
-            let oddVal;
-            for (let i = 0; i < 10; i++) {
-                let row = table.insertRow(i);
-                for (let j = 0; j < 10; j++) {
-                    let cell = row.insertCell(j)
-                    if (i % 2 == 0) {
-                        cell.innerHTML = evenVal;
-                        evenVal--;
-                    } 
-                    else {
-                        cell.innerHTML = oddVal;
-                        oddVal++;
-                    }                 
-                }
-                if (i % 2 == 0) {
-                    oddVal = evenVal - 9;
-                    evenVal -= 10;
-                }
-            }
-        </script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
 

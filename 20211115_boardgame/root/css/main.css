@@ -5,17 +5,71 @@
 }
 
 .container {
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+    font-family: Georgia, serif;
     text-align: center;
 }
 
 h1 {
     margin: 1rem;
+    grid-column-start: 2;
+    font-size: 4rem;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-weight: normal;
+}
+
+.diceFace {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 150px;
+    height: 150px;
+    background-color: #a587b1;
+    border-radius: 15px;
+}
+
+.dot {
+    background-color: #dbcfe0;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.dot:not(:nth-child(5)) {
+    visibility: hidden;
+}
+
+#message {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+button {
+    padding: .75rem 1rem;
+    margin: .5rem 0 1rem;
+    color: #fff;
+    background-color: #782898;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #dbcfe0;
+    color: #782898;
 }
 
 #board {
     width: 750px;
     height: 750px;
-    margin: 1rem auto;
+    margin: auto;
 }
 
 #board tbody {
@@ -41,8 +95,8 @@ h1 {
     align-items: center;
     border-right: 2px solid #000;
     color: #782898;
+    font-family: 'Overpass Mono', monospace;
     font-size: x-large;
-    font-weight: bold;  
 }
 
 #board td:last-child {
