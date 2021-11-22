@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 750px;
+    margin: 1rem auto;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container > div {
+    margin: 1.5rem 0 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#addContactForm {
+    text-align: center;
+}
+
+#addContactForm fieldset {
+    padding: 1.1rem;
+    border: 1px solid #66757F;
+}
+
+#addContactForm legend {
+    color: #55ACEE;
+    font-style: italic;    
+    font-size: .95rem;
+    padding: 0 .3rem;
+    text-align: left;
+}
+
+#addContactForm ul {
+    display: grid;
+    grid-column-gap: .75rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#addContactForm li {
+    list-style-type: none;
+}
+
+span {
+    color: #55ACEE;
+    font-weight: bold;
+}
+
+#addContactForm label {
+    display: block;
+    margin-bottom: .3rem;
+    text-align: left;
+}
+
+#addContactForm li:nth-child(-n+2) {
+    grid-column: 1 / -1;
+}
+
+#addContactForm input:not([type="submit"]) {
+    display: block;
+    width: 100%;
+    padding: .3rem;
+    margin-bottom: .5rem;
+    background-color: #CCD6DD;
+    border: none;
+}
+
+#addContactForm input[type="submit"] {
+    background-color: #55ACEE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 2rem;
+    margin-top: .5rem;
+    text-transform: uppercase;
+}
+
+#addContactForm input[type="submit"]:hover {
+    background-color: #292F33;
+    color: #55ACEE;
+}
+
+#contactList {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+#contactList th, #contactList td {
+    padding: .3rem .5rem;
+}
+
+#contactList tr:nth-child(even) {
+    background-color: #CCD6DD;
+}
+
+#contactList tr:first-child {
+    background-color: #292F33;
+    color: #55ACEE;
+}
