@@ -50,8 +50,10 @@ function addContact() {
     let email = document.getElementById("email").value;
     let city = document.getElementById("city").value;
     let country = document.getElementById("country").value;
-    if (!fullName || !email) 
-        alert("Full Name and Email are required fields.");
+    if (!fullName) 
+        alert("Full Name is a required field.");
+    else if (!email) 
+        alert("Email is a required field.");
     else {
         let newContact = new Contact();
         newContact.fullName = fullName;
