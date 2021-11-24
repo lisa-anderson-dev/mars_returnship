@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>My Contact List</h1>
+            <div>
+                <form action="#" method="post" id="addContactForm">
+                    <fieldset>
+                        <legend>Add/Edit Contact</legend>
+                        <ul>
+                            <li>
+                                <label for="fullName">Full Name <span>*</span></label>
+                                <input type="text" name="fullName" id="fullName" required>
+                            </li>
+                            <li>
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" name="email" id="email" required>
+                            </li>
+                            <li>
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city">
+                            </li>
+                            <li>
+                                <label for="country">Country</label>
+                                <input type="text" name="country" id="country">
+                            </li>
+                        </ul>
+                        <input type="submit" value="Submit" id="submit">
+                    </fieldset>
+                </form>
+            </div> 
+            <div>
+                <table id="contactList">
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Actions</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
