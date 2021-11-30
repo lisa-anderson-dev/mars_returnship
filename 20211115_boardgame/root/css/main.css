@@ -22,7 +22,7 @@ h1 {
     font-weight: normal;
 }
 
-.diceFace {
+.dieFace {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     margin: 1.5rem auto;
